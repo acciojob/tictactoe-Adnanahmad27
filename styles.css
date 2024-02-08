@@ -1,1 +1,12 @@
 /*  your css code here. If applicable */
+.show{
+	display : flex;
+}
+.hide{
+	display : node;
+}
+.page-1{
+	flex-direction : column;
+	align-items : center;
+	gap : 10px;
+}
