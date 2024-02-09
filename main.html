@@ -9,19 +9,23 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<div class="container">
-		<form class="page-1 show">
-			<h2>TIC TAC TOE</h2>
+		<h1>TIC TAC TOE</h1>
+		<form class="show">
 			<div>
 				<label for="player-1">Player 1</label>
-				<input id="player-1" type="text" placeholder="enter name" required>
+				<input id="player-1" type="text" name="p1" placeholder="enter name" required>
 			</div>
 			<div>
 				<label for="player-2">Player 2</label>
-				<input id="player-2" type="text" placeholder="enter name" required>
+				<input id="player-2" type="text" name="p2" placeholder="enter name" required>
 			</div>
 			<button>Start Game</button>
-	</form>
-	</div>	
+		</form>
+	</div>
+	<div class="model hide">
+		<div class="message"></div>
+		<div class="grid-container"></div>
+	</div>
     <script type="text/javascript" src="./script.js">
 </script>
 
