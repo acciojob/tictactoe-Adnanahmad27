@@ -39,13 +39,13 @@ function addingText(e){
 		let col = (id-1)%3;
 		let row = Math.floor((id-1)/3);
 		if(turn){
-			e.target.textContent = `X`;
-			board[row][col] = 'X';
+			e.target.textContent = `x`;
+			board[row][col] = 'x';
 			(checkWinner(row,col)) ? message.textContent = `${player[0]} congratulations you won!`:
 				message.textContent = `${player[1]}, you're up`;
 		}else{
-			e.target.textContent = `O`;
-			board[row][col] = 'O';
+			e.target.textContent = `o`;
+			board[row][col] = 'o';
 			(checkWinner(row,col)) ? message.textContent = `${player[1]} congratulations you won!`:
 				message.textContent = `${player[0]}, you're up`;
 		}
@@ -84,8 +84,6 @@ function getWinnerCell(row,col){
         winnerCell = [3,5,7];
         return winnerCell;
     }
-	
-	
 	return null;
 }
 
